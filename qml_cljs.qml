@@ -9,7 +9,7 @@ ApplicationWindow {
     width: 640
     height: 480
 
-    Component.onCompleted: CLJS.qml_cljs.core.main_entry();
+    Component.onCompleted: CLJS.qml_cljs.core.main_entry(this);
 
     Button {
         text: qsTr("Hello World!!!")

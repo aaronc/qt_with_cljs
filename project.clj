@@ -3,9 +3,9 @@
   :url "http://example.com/FIXME"
 
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-2080"]]
+                 [org.clojure/clojurescript "0.0-2234"]]
 
-  :plugins [[lein-cljsbuild "1.0.0"]]
+  :plugins [[lein-cljsbuild "1.0.3"]]
 
   :source-paths ["src"]
 
@@ -15,4 +15,5 @@
               :compiler {
                 :output-to "qml_cljs.js"
 		:output-dir "out"
-                :optimizations :simple}}]})
+                :optimizations :simple
+                :pretty-print true}}]})
